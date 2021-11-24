@@ -1,0 +1,18 @@
+//Mediaqueries
+@mixin tablet {
+	@media all and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media all and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media all and (min-width: 1440px) {
+		@content;
+	}
+}
