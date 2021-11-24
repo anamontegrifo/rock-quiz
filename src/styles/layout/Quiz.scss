@@ -1,0 +1,47 @@
+@import "../core/variables";
+@import "../core/mixins";
+
+.quiz {
+	height: 75%;
+	width: 100%;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	&__question {
+		width: 80%;
+		background: black;
+		border: 2px solid white;
+		padding: 20px;
+		text-align: center;
+		border-radius: 10px;
+	}
+	&__answers {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		&--item {
+			width: 80%;
+			background-color: black;
+			border: 2px solid white;
+			border-radius: 10px;
+			padding: 10px;
+			text-align: center;
+			cursor: pointer;
+			margin: 10px;
+			&:hover, &.active {
+				background-color: steelblue;
+			}
+			&.correct {
+				animation: correct 2s ease forwards;
+			}
+			&.wrong {
+				animation: wrong 2s ease forwards;
+			}
+		}
+	}
+}

@@ -1,2 +1,32 @@
 @import "core/reset";
 @import "core/variables";
+
+body {
+	font-family: $regular;
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	color: cornsilk;
+}
+
+@keyframes correct {
+	0%, 60% {
+		background-color: black;
+	}
+	80%, 100% {
+		background-color: green;
+	}
+}
+
+@keyframes wrong {
+	0%, 60% {
+		background-color: black;
+	}
+	80%, 100% {
+		background-color: tomato;
+	}
+}
