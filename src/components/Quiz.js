@@ -1,17 +1,37 @@
 import '../styles/layout/Quiz.scss';
 import data from '../data/questions.json';
+import { useEffect, useState } from 'react';
 
-const Quiz = () => {
+const Quiz = (props) => {
+	const [question, setQuestion] = useState(null);
+	const [selectedAnswer, setSelectedAnswer] = useState(null);
+	const [selectedStyle, setSelectedStyle] = useState(null);
+
+	const handleClick = (event) => {
+		setSelectedAnswer(event);
+		console.log(event);
+		setSelectedStyle('quiz__answers--item active');
+	};
+
+	useEffect(() => {
+		setQuestion(data[props.questionOrder]);
+	}, [props.questionOrder]);
+
 	return (
 		<section className="quiz">
-			<div className="quiz__question">
-				<p>¿Cuántos años tiene Wes Anderson</p>
-			</div>
+			<div className="quiz__question">{question?.question}</div>
 			<ul className="quiz__answers">
-				<li className="quiz__answers--item correct">52</li>
-				<li className="quiz__answers--item wrong">23</li>
-				<li className="quiz__answers--item">42</li>
-				<li className="quiz__answers--item">70</li>
+				{question?.answers.map((item, index) => (
+					<li
+						key={index}
+						onClick={() => handleClick(item)}
+						className={
+							selectedAnswer === item ? selectedStyle : 'quiz__answers--item'
+						}
+					>
+						{item.text}
+					</li>
+				))}
 			</ul>
 		</section>
 	);
