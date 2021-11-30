@@ -1,9 +1,7 @@
 import '../styles/layout/Quiz.scss';
-import data from '../data/questions.json';
 import { useEffect, useState } from 'react';
 
 const Quiz = (props) => {
-	const [question, setQuestion] = useState(null);
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
 	const [selectedStyle, setSelectedStyle] = useState(null);
 
@@ -13,15 +11,11 @@ const Quiz = (props) => {
 		setSelectedStyle('quiz__answers--item active');
 	};
 
-	useEffect(() => {
-		setQuestion(data[props.questionOrder]);
-	}, [props.questionOrder]);
-
 	return (
 		<section className="quiz">
-			<div className="quiz__question">{question?.question}</div>
+			<div className="quiz__question">{props.question.question}</div>
 			<ul className="quiz__answers">
-				{question?.answers.map((item, index) => (
+				{props.question.answers.map((item, index) => (
 					<li
 						key={index}
 						onClick={() => handleClick(item)}

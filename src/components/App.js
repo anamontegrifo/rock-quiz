@@ -1,11 +1,35 @@
 import '../styles/App.scss';
+import { Routes, Route } from 'react-router-dom';
 import Quiz from './Quiz';
 import Score from './Score';
-import { useState } from 'react';
-// import { Route, Switch, useRouteMatch } from 'react-router-dom';
+import Start from './Start';
+import { useState, useEffect } from 'react';
+import data from '../data/questions.json';
 
 function App() {
-	const [questionOrder, setQuestionOrder] = useState(0);
+	const [numeroPreguntas, setNumeroPreguntas] = useState(10);
+	const [arrayPreguntas, setArrayPreguntas] = useState(data);
+	const [order, setOrder] = useState(0);
+	const [question, setQuestion] = useState(arrayPreguntas[order]);
+
+	useEffect(() => {
+		arrayPreguntas.sort(() => {
+			return Math.random() - 0.5;
+		});
+		console.log(arrayPreguntas);
+	});
+
+	const generarNumeros = () => {
+		setQuestion(arrayPreguntas[order]);
+		setOrder(order + 1);
+		if (order === 9) {
+			console.log('ultima pregunta');
+		}
+	};
+
+	const handleReset = () => {
+		setArrayPreguntas(data);
+	};
 
 	const counterItems = [
 		{ id: 1, point: '-5' },
@@ -23,8 +47,28 @@ function App() {
 
 	return (
 		<div className="app">
-			<Quiz setQuestionOrder={setQuestionOrder} questionOrder={questionOrder} />
-			<Score />
+			<Routes>
+				<Route
+					path="/game"
+					element={
+						<>
+							<Quiz
+								question={question}
+								setQuestion={setQuestion}
+								order={order}
+								data={arrayPreguntas}
+								setData={setArrayPreguntas}
+							/>
+
+							<button onClick={generarNumeros}>Prueba</button>
+							<button onClick={handleReset}>Reset</button>
+							<Score />
+						</>
+					}
+				/>
+
+				<Route path="/" element={<Start />}></Route>
+			</Routes>
 		</div>
 	);
 }
