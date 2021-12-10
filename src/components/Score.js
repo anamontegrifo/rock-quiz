@@ -1,21 +1,19 @@
 import '../styles/layout/Score.scss';
 
 const Score = () => {
+	const totalCounter = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+	const hitCounterList = totalCounter.map((number, index) => (
+		<li className="score__list--item" key={index + 1}></li>
+	));
+	const faultCounterList = totalCounter.map((number, index) => (
+		<li className="score__list--item" key={index + 1}></li>
+	));
+
 	return (
 		<section className="score">
-			<ul className="score__list">
-				<li className="score__list--item negative"></li>
-				<li className="score__list--item negative"></li>
-				<li className="score__list--item negative"></li>
-				<li className="score__list--item negative"></li>
-				<li className="score__list--item negative"></li>
-				<li className="score__list--item zero"></li>
-				<li className="score__list--item positive"></li>
-				<li className="score__list--item positive"></li>
-				<li className="score__list--item positive"></li>
-				<li className="score__list--item positive"></li>
-				<li className="score__list--item positive"></li>
-			</ul>
+			<ul className="score__list">{hitCounterList}</ul>
+			<ul className="score__list">{faultCounterList}</ul>
 		</section>
 	);
 };

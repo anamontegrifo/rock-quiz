@@ -1,5 +1,5 @@
 import '../styles/layout/Quiz.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Quiz = (props) => {
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -22,11 +22,23 @@ const Quiz = (props) => {
 					: 'quiz__answers--item wrong'
 			);
 		});
+		timeDelay(1000, () => {
+			if (item.correct) {
+				props.correctAnswer();
+				props.setHitCounter(props.hitCounter + 1);
+			} else {
+				props.wrongAnswer();
+				props.setFaultCounter(props.faultCounter + 1);
+			}
+		});
 	};
 
 	return (
 		<section className="quiz">
-			<div className="quiz__question">{props.question.question}</div>
+			<div className="quiz__question">
+				<h2>{props.question.category}</h2>
+				<p>{props.question.question}</p>
+			</div>
 			<ul className="quiz__answers">
 				{props.question.answers.map((item, index) => (
 					<li

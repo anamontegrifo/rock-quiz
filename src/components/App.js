@@ -5,45 +5,39 @@ import Score from './Score';
 import Start from './Start';
 import { useState, useEffect } from 'react';
 import data from '../data/questions.json';
+import correct from '../media/correct.mp3';
+import wrong from '../media/wrong.mp3';
+import useSound from 'use-sound';
 
 function App() {
-	const [numeroPreguntas, setNumeroPreguntas] = useState(10);
-	const [arrayPreguntas, setArrayPreguntas] = useState(data);
+	// const [numeroPreguntas, setNumeroPreguntas] = useState(10);
+	const [questionArray, setQuestionArray] = useState(data);
 	const [order, setOrder] = useState(0);
-	const [question, setQuestion] = useState(arrayPreguntas[0]);
+	const [question, setQuestion] = useState(questionArray[0]);
+	const [correctAnswer] = useSound(correct);
+	const [wrongAnswer] = useSound(wrong);
+	const [hitCounter, setHitCounter] = useState(0);
+	const [faultCounter, setFaultCounter] = useState(0);
 
 	useEffect(() => {
-		arrayPreguntas.sort(() => {
+		questionArray.sort(() => {
 			return Math.random() - 0.5;
 		});
-		setQuestion(arrayPreguntas[0]);
+		setQuestion(questionArray[0]);
+		console.log(hitCounter);
 	}, []);
 
 	const nextQuestion = () => {
-		setQuestion(arrayPreguntas[order]);
 		setOrder(order + 1);
+		setQuestion(questionArray[order + 1]);
 		if (order === 9) {
 			console.log('ultima pregunta');
 		}
 	};
 
 	const handleReset = () => {
-		setArrayPreguntas(data);
+		setQuestionArray(data);
 	};
-
-	const counterItems = [
-		{ id: 1, point: '-5' },
-		{ id: 2, point: '-4' },
-		{ id: 3, point: '-3' },
-		{ id: 4, point: '-2' },
-		{ id: 5, point: '-1' },
-		{ id: 6, point: '0' },
-		{ id: 7, point: '1' },
-		{ id: 8, point: '2' },
-		{ id: 9, point: '3' },
-		{ id: 10, point: '4' },
-		{ id: 11, point: '5' },
-	];
 
 	return (
 		<div className="app">
@@ -56,8 +50,14 @@ function App() {
 								question={question}
 								setQuestion={setQuestion}
 								order={order}
-								data={arrayPreguntas}
-								setData={setArrayPreguntas}
+								data={questionArray}
+								setData={setQuestionArray}
+								correctAnswer={correctAnswer}
+								wrongAnswer={wrongAnswer}
+								hitCounter={hitCounter}
+								setHitCounter={setHitCounter}
+								faultCounter={faultCounter}
+								setFaultCounter={setFaultCounter}
 							/>
 
 							<button onClick={nextQuestion}>Prueba</button>

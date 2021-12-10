@@ -1,78 +1,82 @@
 [
 	{
 		"id": 0,
-		"question": "Pregunta id 0",
-		"explanation": "El parchís es un juego de mesa derivado del parchisi.",
-		"image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Tablero_parchis.png",
+		"category": "Pioneros del rock",
+		"question": "En 1922 ¿quién incluyó por primera vez las palabras 'rock' y 'roll' en una canción?",
+		"explanation": "Sí, ¡fue una mujer! La cantante de blues Trixie Smith es la primera en grabar esas dos palabras en su canción 'My baby rocks me with one steady roll'",
+		"media": "https://open.spotify.com/embed/track/4cputOB2WH8qeKRVafoopX?utm_source=generator",
 		"answers": [
 			{
-				"text": "2",
+				"text": "Robert Johnson",
 				"correct": false
 			},
 			{
-				"text": "4",
+				"text": "Trixie Smith",
 				"correct": true
 			},
 			{
-				"text": "9",
+				"text": "Wild Bill Moore",
 				"correct": false
 			},
 			{
-				"text": "1",
+				"text": "Stick McGhee",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 1,
-		"question": "Pregunta id 1",
-		"explanation": "El parchís es un juego de mesa derivado del parchisi.",
-		"image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Tablero_parchis.png",
+		"category": "Pioneros del rock",
+		"question": "¿Qué fabricaba la empresa que lanzó el primer jukebox?",
+		"explanation": "En 1915, el fabricante de máquinas tragaperras 'The Chicago Automatic Machines & Tools' lanza al mercado el primer jukebox de discos",
+		"media": "",
 		"answers": [
 			{
-				"text": "2",
-				"correct": false
-			},
-			{
-				"text": "4",
+				"text": "Máquinas tragaperras",
 				"correct": true
 			},
 			{
-				"text": "9",
+				"text": "Gramófonos",
 				"correct": false
 			},
 			{
-				"text": "1",
+				"text": "Discos de 78 RPM",
+				"correct": false
+			},
+			{
+				"text": "Mecanismos de automóvil",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 2,
-		"question": "Pregunta id 2",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Años cincuenta",
+		"question": "¿Qué icono de la música country, autor de 'Hey, Good Lookin' y 'Jambalaya', murió en extrañas circunstancias en 1953?",
+		"explanation": "Y Nashville se puso de luto. Hank Williams fue encontrado muerto en la parte trasera de su Cadillac. Nunca se hizo público por respeto a su familia, pero en su sangre encontraron restos de morfina y anfetaminas.",
+		"media": "",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "Bill Halley",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
+				"text": "George Brasens",
 				"correct": false
 			},
 			{
-				"text": "Blanco",
+				"text": "Hank Williams",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "Elvis Presley",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 3,
+		"category": "Años cincuenta",
 		"question": "Pregunta id 3",
 		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
 		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
