@@ -5,10 +5,23 @@ const Quiz = (props) => {
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
 	const [selectedStyle, setSelectedStyle] = useState(null);
 
-	const handleClick = (event) => {
-		setSelectedAnswer(event);
-		console.log(event);
+	const timeDelay = (duration, callback) => {
+		setTimeout(() => {
+			callback();
+		}, duration);
+	};
+
+	const handleClick = (item) => {
+		setSelectedAnswer(item);
 		setSelectedStyle('quiz__answers--item active');
+
+		timeDelay(1500, () => {
+			setSelectedStyle(
+				item.correct
+					? 'quiz__answers--item correct'
+					: 'quiz__answers--item wrong'
+			);
+		});
 	};
 
 	return (

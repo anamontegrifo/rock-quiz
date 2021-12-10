@@ -34,10 +34,10 @@
 			cursor: pointer;
 			margin: 10px;
 			&:hover, &.active {
-				background-color: steelblue;
+				background-color: goldenrod;
 			}
 			&.correct {
-				animation: correct 2s ease forwards;
+				animation: correct 1s ease forwards;
 			}
 			&.wrong {
 				animation: wrong 2s ease forwards;

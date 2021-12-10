@@ -10,16 +10,16 @@ function App() {
 	const [numeroPreguntas, setNumeroPreguntas] = useState(10);
 	const [arrayPreguntas, setArrayPreguntas] = useState(data);
 	const [order, setOrder] = useState(0);
-	const [question, setQuestion] = useState(arrayPreguntas[order]);
+	const [question, setQuestion] = useState(arrayPreguntas[0]);
 
 	useEffect(() => {
 		arrayPreguntas.sort(() => {
 			return Math.random() - 0.5;
 		});
-		console.log(arrayPreguntas);
-	});
+		setQuestion(arrayPreguntas[0]);
+	}, []);
 
-	const generarNumeros = () => {
+	const nextQuestion = () => {
 		setQuestion(arrayPreguntas[order]);
 		setOrder(order + 1);
 		if (order === 9) {
@@ -60,7 +60,7 @@ function App() {
 								setData={setArrayPreguntas}
 							/>
 
-							<button onClick={generarNumeros}>Prueba</button>
+							<button onClick={nextQuestion}>Prueba</button>
 							<button onClick={handleReset}>Reset</button>
 							<Score />
 						</>
