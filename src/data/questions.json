@@ -3,7 +3,7 @@
 		"id": 0,
 		"category": "Rock en pañales",
 		"question": "En 1922 ¿quién incluyó por primera vez las palabras 'rock' y 'roll' en una canción?",
-		"explanation": "Sí, ¡fue una mujer! La cantante de blues Trixie Smith es la primera en grabar esas dos palabras en su canción 'My baby rocks me with one steady roll'",
+		"explanation": "Sí, ¡fue una mujer! La cantante de blues Trixie Smith es la primera en grabar esas dos palabras en su canción 'My baby rocks me with one steady roll.'",
 		"media": "https://open.spotify.com/embed/track/4cputOB2WH8qeKRVafoopX?utm_source=generator",
 		"answers": [
 			{
@@ -26,8 +26,8 @@
 	},
 	{
 		"id": 1,
-		"category": "Pioneros del rock",
-		"question": "¿Qué fabricaba la empresa que lanzó el primer jukebox?",
+		"category": "Rock en pañales",
+		"question": "¿Qué fabricaba originalmente la empresa que ideó el primer jukebox?",
 		"explanation": "En 1915, el fabricante de máquinas tragaperras 'The Chicago Automatic Machines & Tools' lanza al mercado el primer jukebox de discos",
 		"media": "",
 		"answers": [
@@ -51,10 +51,10 @@
 	},
 	{
 		"id": 2,
-		"category": "Años cincuenta",
+		"category": "Estrellas malditas",
 		"question": "¿Qué icono de la música country, autor de 'Hey, Good Lookin' y 'Jambalaya', murió en extrañas circunstancias en 1953?",
 		"explanation": "Y Nashville se puso de luto. Hank Williams fue encontrado muerto en la parte trasera de su Cadillac. Nunca se hizo público por respeto a su familia, pero en su sangre encontraron restos de morfina y anfetaminas.",
-		"media": "",
+		"media": "https://open.spotify.com/embed/track/5gbm0aNo7eXNuOEkQi5m9B?utm_source=generator",
 		"answers": [
 			{
 				"text": "Bill Halley",
@@ -76,169 +76,250 @@
 	},
 	{
 		"id": 3,
-		"category": "Años cincuenta",
-		"question": "Pregunta id 3",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Estrellas malditas",
+		"question": "¿Cómo murió el cantante y pianista Johnny Ace?",
+		"explanation": "En la noche de Navidad de 1954 Johnny jugaba con su arma favorita mientras esperaba a salir a actuar. Presumiendo saber en qué tambor se encontraba la bala primero apuntó a su novia y luego a su propia cara. Y disparó. Su mayor éxito, 'Pledging my love' llegó a título póstumo",
+		"media": "https://open.spotify.com/embed/track/70Xt4jSqmMpdrpO5P6ypvC?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "Atragantado mientras comía",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
+				"text": "Atropellado por un autobús en Memphis",
 				"correct": false
 			},
 			{
-				"text": "Blanco",
+				"text": "Jugando a la ruleta rusa",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "En la guerra de Vietnam",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 4,
-		"question": "Pregunta id 4",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Greatest hits",
+		"question": "¿Cuál de estas canciones no triunfó en los años cincuenta?",
+		"explanation": "'I want to hold your hand' se publicó en 1963, fue el quinto sencillo de The Beatles y primer éxito del grupo en EEUU. A día de hoy, esta sencilla canción ha vendido más de 15 millones de copias físicas en todo el mundo.",
+		"media": "https://open.spotify.com/embed/track/4pbG9SUmWIvsROVLF0zF9s?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "Maybellene",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
-				"correct": false
-			},
-			{
-				"text": "Blanco",
+				"text": "I want to hold your hand",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "Tutti Frutti",
+				"correct": false
+			},
+			{
+				"text": "Speedo",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 5,
-		"question": "Pregunta id 5",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Marcando estilo",
+		"question": "¿Qué paso de baile popularizó Chuck Berry al intentar disimular un desgarrón en su americana?",
+		"explanation": "Este paso, creado por el cantante T-Bone Walker, se hizo tan popular después de esa actuación que Chuck Berry lo siguió haciendo en cada uno de sus conciertos. Y sí, es el mismo que adoptó años después Angus Young de AC/DC.",
+		"media": "https://open.spotify.com/embed/track/2NzqM7E2oC9p7vAS0TNt5z?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
-				"correct": false
-			},
-			{
-				"text": "Pardo",
-				"correct": false
-			},
-			{
-				"text": "Blanco",
+				"text": "Duck walk",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "Moon walk",
+				"correct": false
+			},
+			{
+				"text": "Twist",
+				"correct": false
+			},
+			{
+				"text": "Hip swing",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 6,
-		"question": "Pregunta id 6",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Marcando estilo",
+		"question": "¿Cómo se llamaban artísticamente en sus inicios Paul Simon y Art Garfunkel?",
+		"explanation": "Siendo compañeros de instituto, con 16 años, Paul y Art forman el dúo Tom & Jerry, y graban su primer sencillo: 'Hey, Schoolgirl'. Después de intensos desencuentros y fracasos, unos años después se volvieron a reunir como Simon & Garkunkel.",
+		"media": "https://open.spotify.com/embed/track/2Op27uhui9KqC2ikbSuEad?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "Art & Paul",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
+				"text": "The Hills",
 				"correct": false
 			},
 			{
-				"text": "Blanco",
+				"text": "Tom & Jerry",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "The teenagers",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 7,
-		"question": "Pregunta id 7",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Haciendo amigos",
+		"question": "¿Qué frase soltó Jerry Lee Lewis tras prender fuego a un piano en una legendaria actuación?",
+		"explanation": "Furioso por tener que telonear a Chuck Berry, Lewis salió al escenario con una botella de Coca-cola llena de gasolina y prendió fuego al piano mientras interpretaba 'Great balls of fire'.",
+		"media": "https://open.spotify.com/embed/track/5jw1zzcYFivmuJK52JrnMK?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "'¡Echa más gasolina!'",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
+				"text": "'Mis grandes bolas de fuego'",
 				"correct": false
 			},
 			{
-				"text": "Blanco",
+				"text": "'¡Apágalo, joder!'",
+				"correct": false
+			},
+			{
+				"text": "'Supera eso, negro'",
 				"correct": true
-			},
-			{
-				"text": "Amarillo",
-				"correct": false
 			}
 		]
 	},
 	{
 		"id": 8,
-		"question": "Pregunta id 8",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Estrellas malditas",
+		"question": "¿Quién acompañaba a Richie Valens y a The Big Booper en el accidente aéreo que acabó con sus vidas en 1959?",
+		"explanation": "Buddy Holly se encontraba de gira por el centro de EEUU. Las largas distancias y las condiciones climáticas estaban afectando a los músicos; entonces Holly decidió alquilar un avión para realizar el trayecto desde Iowa a Minesotta, y Richie Valens y The Big Booper ocuparon los dos puestos sobrantes. Ese 3 de febrero de 1959 pasó a conocerse como 'El día que murió la música'.",
+		"media": "https://open.spotify.com/embed/track/33aYzW5ToRjiFOzkubeJ8H?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "Alan Freed",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
+				"text": "Ray Charles",
 				"correct": false
 			},
 			{
-				"text": "Blanco",
+				"text": "Buddy Holly",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "Eddie Cochran",
 				"correct": false
 			}
 		]
 	},
 	{
 		"id": 9,
-		"question": "Pregunta id 9",
-		"explanation": "El Santiago al que se refiere es Santiago Apóstol.",
-		"image": "https://www.larazon.es/resizer/dtn7faZUWj366eCISHay5M_7DyY=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/KULOZQIIRRBNHJVIKDEZDDDWKU.jpg",
+		"category": "Greatest hits",
+		"question": "¿Qué grupo alcanzó el éxito con el tema instrumental 'Apache'?",
+		"explanation": "The Shadows popularizaron esta canción en 1960 y su influencia fue importante en los inicios del hip hop y el rap. Desde entonces 'Apache' ha sido 'sampleada' incontables veces.",
+		"media": "https://open.spotify.com/embed/track/0sZy1HE2aGBQABHfVRQ4jB?utm_source=generator",
 		"answers": [
 			{
-				"text": "Negro",
+				"text": "The Ventures",
 				"correct": false
 			},
 			{
-				"text": "Pardo",
-				"correct": false
-			},
-			{
-				"text": "Blanco",
+				"text": "The Shadows",
 				"correct": true
 			},
 			{
-				"text": "Amarillo",
+				"text": "The Crystals",
+				"correct": false
+			},
+			{
+				"text": "The Beatles",
+				"correct": false
+			}
+		]
+	},
+	{
+		"id": 9,
+		"category": "Greatest hits",
+		"question": "¿Qué grupo alcanzó el éxito con el tema instrumental 'Apache'?",
+		"explanation": "The Shadows popularizaron esta canción en 1960 y su influencia fue importante en los inicios del hip hop y el rap. Desde entonces 'Apache' ha sido 'sampleada' incontables veces.",
+		"media": "https://open.spotify.com/embed/track/0sZy1HE2aGBQABHfVRQ4jB?utm_source=generator",
+		"answers": [
+			{
+				"text": "The Ventures",
+				"correct": false
+			},
+			{
+				"text": "The Shadows",
+				"correct": true
+			},
+			{
+				"text": "The Crystals",
+				"correct": false
+			},
+			{
+				"text": "The Beatles",
+				"correct": false
+			}
+		]
+	},
+	{
+		"id": 10,
+		"category": "Rock en pañales",
+		"question": "¿A qué ciudad alemana decidió enviar a The Beatles su agente de reservas Allan Williams buscando el éxito de la banda?",
+		"explanation": "Hamburgo, en 1960, tenía reputación de ciudad de vicio y delincuencia. Actuaron regularmente en sus clubes durante más de dos años, se alimentaban de cerveza y anfetaminas, fueron detenidos por causar altercados, pero crecieron como músicos. Ahí nació su estilo ¡y su corte de pelo característico!",
+		"media": "https://open.spotify.com/embed/track/2jlGyLNsfSRdcTynI1D08K?utm_source=generator",
+		"answers": [
+			{
+				"text": "Hamburgo",
+				"correct": true
+			},
+			{
+				"text": "Berlín",
+				"correct": false
+			},
+			{
+				"text": "Dortmund",
+				"correct": false
+			},
+			{
+				"text": "Stuttgard",
+				"correct": false
+			}
+		]
+	},
+	{
+		"id": 11,
+		"category": "Rock en pañales",
+		"question": "¿Qué grupo de jóvenes ingleses debutó en 1962 en el club londinense 'Marquee Jazz Club'?",
+		"explanation": "Mick Jagger, Keith Richards, Ian Stewart y Brian Jones cofiguraron la formación primigenia de The Rolling Stones. Eran unos apasionados del blues y el rock 'n' roll, y su primer LP contenía una selección de clásicos americanos.",
+		"media": "https://open.spotify.com/embed/track/7j96wehhMtN0fkVvFhD8Ix?utm_source=generator",
+		"answers": [
+			{
+				"text": "The Pretty Things",
+				"correct": false
+			},
+			{
+				"text": "The Rolling Stones",
+				"correct": true
+			},
+			{
+				"text": "The Kinks",
+				"correct": false
+			},
+			{
+				"text": "The Zombies ",
 				"correct": false
 			}
 		]

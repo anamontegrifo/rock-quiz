@@ -2,7 +2,7 @@ import '../styles/layout/Quiz.scss';
 
 const Explain = (props) => {
 	return (
-		<div className="quiz__explanation">
+		<div className={props.visibleStyle}>
 			<div className="quiz__explanation--info">
 				<h2>{props.explanation}</h2>
 				<iframe
@@ -15,6 +15,7 @@ const Explain = (props) => {
 					allowFullScreen=""
 					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 				></iframe>
+				<button onClick={props.handleNextQuestion}>Otra!</button>
 			</div>
 		</div>
 	);
