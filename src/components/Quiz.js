@@ -1,5 +1,6 @@
 import '../styles/layout/Quiz.scss';
 import { useState } from 'react';
+import Explain from './Explain';
 
 const Quiz = (props) => {
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -52,6 +53,10 @@ const Quiz = (props) => {
 					</li>
 				))}
 			</ul>
+			<Explain
+				explanation={props.question.explanation}
+				media={props.question.media}
+			/>
 		</section>
 	);
 };
