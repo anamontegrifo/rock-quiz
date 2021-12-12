@@ -25,6 +25,7 @@ function App() {
 			return Math.random() - 0.5;
 		});
 		setQuestion(data[0]);
+		console.log(data);
 	}, []);
 
 	const handleDelay = (duration, callback) => {
@@ -63,7 +64,7 @@ function App() {
 		setOrder(order + 1);
 		setQuestion(data[order + 1]);
 	};
-	console.log(hitCounter, faultCounter);
+
 	return (
 		<div className="app">
 			<Routes>

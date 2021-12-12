@@ -250,31 +250,6 @@
 		]
 	},
 	{
-		"id": 9,
-		"category": "Greatest hits",
-		"question": "¿Qué grupo alcanzó el éxito con el tema instrumental 'Apache'?",
-		"explanation": "The Shadows popularizaron esta canción en 1960 y su influencia fue importante en los inicios del hip hop y el rap. Desde entonces 'Apache' ha sido 'sampleada' incontables veces.",
-		"media": "https://open.spotify.com/embed/track/0sZy1HE2aGBQABHfVRQ4jB?utm_source=generator",
-		"answers": [
-			{
-				"text": "The Ventures",
-				"correct": false
-			},
-			{
-				"text": "The Shadows",
-				"correct": true
-			},
-			{
-				"text": "The Crystals",
-				"correct": false
-			},
-			{
-				"text": "The Beatles",
-				"correct": false
-			}
-		]
-	},
-	{
 		"id": 10,
 		"category": "Rock en pañales",
 		"question": "¿A qué ciudad alemana decidió enviar a The Beatles su agente de reservas Allan Williams buscando el éxito de la banda?",
@@ -321,6 +296,56 @@
 			{
 				"text": "The Zombies ",
 				"correct": false
+			}
+		]
+	},
+	{
+		"id": 12,
+		"category": "Marcando estilo",
+		"question": "¿Quién registró una guitarra distorsionada por primera vez en una grabación?",
+		"explanation": "Fueron 'The Kinks', concretamente su guitarrista Dave Davies. Durante la grabación de 'You really got me' Dave quiso experimentar con el sonido y conseguir algo más potente. Después de algún intento accidentado, con descarga eléctrica incluida, decidió rasgar la membrana de un amplificador con una cuchilla. El efecto conseguido fue directo y vibrante, es uno de los riffs de guitarra más populares.",
+		"media": "https://open.spotify.com/embed/track/29SyMC0plk6qw8NMF7lfRL?utm_source=generator",
+		"answers": [
+			{
+				"text": "Jimmy Hendrix",
+				"correct": false
+			},
+			{
+				"text": "Led Zeppelin",
+				"correct": false
+			},
+			{
+				"text": "The Kinks",
+				"correct": true
+			},
+			{
+				"text": "Black Sabbath",
+				"correct": false
+			}
+		]
+	},
+	{
+		"id": 13,
+		"category": "Greatest hits",
+		"question": "En su llegada a EEUU, The Beatles ocupaban los cinco primeros puestos del Billboard de sencillos pop. ¿Cuál de estas canciones no estaba incluida en ese primer ranking?",
+		"explanation": "The Beatles invadieron EEUU en 1964, y Yesterday se publicó el año siguiente en el álbum 'Help!'. En la grabación original solo aparece Paul McCartney junto a un cuarteto de cuerdas y el resto de integrantes no aceptaron que se editara como sencillo. Aún así, se convirtió en una de las canciones más populares, reportando a Mr. Paul unos ingresos superiores a ¡490 millones de euros!.",
+		"media": "https://open.spotify.com/embed/track/4E5rL7YL0hVUPqeMSpjEF2?utm_source=generator",
+		"answers": [
+			{
+				"text": "Twist and shout",
+				"correct": false
+			},
+			{
+				"text": "Please please me",
+				"correct": false
+			},
+			{
+				"text": "Can't buy me love",
+				"correct": false
+			},
+			{
+				"text": "Yesterday",
+				"correct": true
 			}
 		]
 	}
