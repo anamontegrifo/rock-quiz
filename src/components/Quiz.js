@@ -1,11 +1,16 @@
 import '../styles/layout/Quiz.scss';
+import EndGame from './EndGame';
 import Explain from './Explain';
+import { Link } from 'react-router-dom';
 
 const Quiz = (props) => {
 	return (
 		<section className="quiz">
+			<Link to="/">
+				<button>Inicio</button>
+			</Link>
+			<h2 className="quiz__category">{props.question.category}</h2>
 			<div className="quiz__question">
-				<h2>{props.question.category}</h2>
 				<p>{props.question.question}</p>
 			</div>
 			<ul className="quiz__answers">
@@ -13,11 +18,8 @@ const Quiz = (props) => {
 					<li
 						key={index}
 						onClick={() => props.handleClick(item)}
-						className={
-							props.selectedAnswer === item
-								? props.selectedStyle
-								: 'quiz__answers--item'
-						}
+						className={`${props.cursor}
+							${props.selectedAnswer === item ? props.selectedStyle : 'quiz__answers--item'}`}
 					>
 						{item.text}
 					</li>
@@ -28,6 +30,11 @@ const Quiz = (props) => {
 				media={props.question.media}
 				handleNextQuestion={props.handleNextQuestion}
 				visibleStyle={props.visibleStyle}
+			/>
+			<EndGame
+				endGame={props.endGame}
+				hitCounter={props.hitCounter}
+				faultCounter={props.faultCounter}
 			/>
 		</section>
 	);

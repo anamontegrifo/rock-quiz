@@ -5,7 +5,7 @@ import Score from './Score';
 import Start from './Start';
 import { useState, useEffect } from 'react';
 import data from '../data/questions.json';
-import correct from '../media/correct.mp3';
+import correct from '../media/correct.wav';
 import wrong from '../media/wrong.mp3';
 import useSound from 'use-sound';
 
@@ -19,16 +19,25 @@ function App() {
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
 	const [selectedStyle, setSelectedStyle] = useState(null);
 	const [visibleStyle, setVisibleStyle] = useState('hidden');
+	const [endGame, setEndGame] = useState('hidden');
+	const [cursor, setCursor] = useState(null);
 
 	useEffect(() => {
 		data.sort(() => {
 			return Math.random() - 0.5;
 		});
 		setQuestion(data[0]);
-		console.log(data);
 	}, []);
 
-	const handleDelay = (duration, callback) => {
+	const handleReset = () => {
+		setHitCounter(0);
+		setFaultCounter(0);
+		data.sort(() => {
+			return Math.random() - 0.5;
+		});
+		setQuestion(data[0]);
+	};
+	const timeDelay = (duration, callback) => {
 		setTimeout(() => {
 			callback();
 		}, duration);
@@ -36,16 +45,17 @@ function App() {
 
 	const handleClick = (item) => {
 		setSelectedAnswer(item);
+		setCursor('notAllowed');
 		setSelectedStyle('quiz__answers--item active');
 
-		handleDelay(1500, () => {
+		timeDelay(1500, () => {
 			setSelectedStyle(
 				item.correct
 					? 'quiz__answers--item correct'
 					: 'quiz__answers--item wrong'
 			);
 		});
-		handleDelay(2000, () => {
+		timeDelay(2000, () => {
 			if (item.correct) {
 				correctAnswerSound();
 				setHitCounter(hitCounter + 1);
@@ -54,15 +64,20 @@ function App() {
 				setFaultCounter(faultCounter + 1);
 			}
 		});
-		handleDelay(5000, () => {
+		timeDelay(5000, () => {
+			setCursor(null);
 			setVisibleStyle('quiz__explanation');
 		});
 	};
 
 	const handleNextQuestion = () => {
 		setVisibleStyle('hidden');
-		setOrder(order + 1);
-		setQuestion(data[order + 1]);
+		if (hitCounter === 5 || faultCounter === 5) {
+			setEndGame('endGame');
+		} else {
+			setOrder(order + 1);
+			setQuestion(data[order + 1]);
+		}
 	};
 
 	return (
@@ -74,19 +89,23 @@ function App() {
 						<>
 							<Quiz
 								handleClick={handleClick}
-								handleDelay={handleDelay}
+								timeDelay={timeDelay}
 								handleNextQuestion={handleNextQuestion}
 								selectedAnswer={selectedAnswer}
 								selectedStyle={selectedStyle}
 								question={question}
 								visibleStyle={visibleStyle}
+								endGame={endGame}
+								cursor={cursor}
+								hitCounter={hitCounter}
+								faultCounter={faultCounter}
 							/>
 							<Score hitCounter={hitCounter} faultCounter={faultCounter} />
 						</>
 					}
 				/>
 
-				<Route path="/" element={<Start />}></Route>
+				<Route path="/" element={<Start handleReset={handleReset} />}></Route>
 			</Routes>
 		</div>
 	);

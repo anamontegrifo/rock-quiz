@@ -4,18 +4,22 @@
 .quiz {
 	height: 75%;
 	width: 100%;
+	padding: 20px;
 	border: 2px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	&__category {
+		color:black;
+		font-size: 20px;
+		align-self: start;
+	}
 	&__question {
 		width: 80%;
 		background: black;
-		border: 2px solid white;
 		padding: 20px;
 		text-align: center;
-		border-radius: 10px;
 	}
 	&__answers {
 		width: 100%;
@@ -27,8 +31,6 @@
 		&--item {
 			width: 80%;
 			background-color: black;
-			border: 2px solid white;
-			border-radius: 10px;
 			padding: 10px;
 			text-align: center;
 			cursor: pointer;
@@ -45,7 +47,7 @@
 		}
 	}
 	&__explanation {
-		background-color: rgba(238, 163, 163, 0.8);
+		background-color: rgb(126, 124, 124);
 		position: absolute;
 		top:0;
 		width: 100%;
@@ -54,7 +56,7 @@
 		align-items: center;
 		justify-content: center;
 		&--info {
-			background-color: rgba(165, 42, 42, 1);
+			background-color: rgb(22, 21, 21);
 			height: 80%;
 			width: 80%;
 			border-radius: 5px;
@@ -75,4 +77,18 @@
 }
 .redActive {
 	animation: wrong 1s ease forwards;
+}
+.notAllowed {
+	pointer-events: none;
+}
+
+.endGame {
+	background-color: rgba(238, 163, 163, 1);
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

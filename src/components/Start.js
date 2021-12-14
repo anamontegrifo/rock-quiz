@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import vinyl from '../media/vinyl.png';
 import Footer from './Footer';
 
-const Start = () => {
+const Start = (props) => {
 	return (
 		<div className="start">
 			<section className="start__main">
@@ -17,7 +17,12 @@ const Start = () => {
 				</div>
 				<p className="start__text">Anécdotas desde los orígenes del rock!</p>
 				<Link to="/game">
-					<button className="start__button slideTop">Start</button>
+					<button
+						onClick={props.handleReset}
+						className="start__button slideTop"
+					>
+						Start
+					</button>
 				</Link>
 				<Footer />
 			</section>
