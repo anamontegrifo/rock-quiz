@@ -1,6 +1,6 @@
-import '../styles/layout/Footer.scss';
+import '../styles/layout/Spotify.scss';
 
-const Footer = () => {
+const Spotify = () => {
 	return (
 		<>
 			<iframe
@@ -16,4 +16,4 @@ const Footer = () => {
 		</>
 	);
 };
-export default Footer;
+export default Spotify;

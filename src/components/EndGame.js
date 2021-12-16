@@ -1,4 +1,5 @@
 import '../styles/layout/Quiz.scss';
+import Spotify from './Spotify';
 
 const EndGame = (props) => {
 	return (
@@ -7,6 +8,7 @@ const EndGame = (props) => {
 				<h2>Final del juego</h2>
 				<p>Aciertos: {props.hitCounter}</p>
 				<p>Fallos: {props.faultCounter}</p>
+				<Spotify />
 			</div>
 		</div>
 	);

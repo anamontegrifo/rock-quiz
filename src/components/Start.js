@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/layout/Start.scss';
 import { Link } from 'react-router-dom';
 import vinyl from '../media/vinyl.png';
-import Footer from './Footer';
 
 const Start = (props) => {
 	return (
@@ -24,7 +23,6 @@ const Start = (props) => {
 						Start
 					</button>
 				</Link>
-				<Footer />
 			</section>
 		</div>
 	);
