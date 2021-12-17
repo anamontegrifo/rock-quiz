@@ -6,10 +6,13 @@ import { Link } from 'react-router-dom';
 const Quiz = (props) => {
 	return (
 		<section className="quiz">
-			<Link to="/">
-				<button>Inicio</button>
-			</Link>
 			<h2 className="quiz__category">{props.question.category}</h2>
+			<Link to="/">
+				<button className="quiz__button">
+					<i class="fas fa-times-circle"></i>
+				</button>
+			</Link>
+
 			<div className="quiz__question">
 				<p>{props.question.question}</p>
 			</div>

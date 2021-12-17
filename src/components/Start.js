@@ -14,7 +14,10 @@ const Start = (props) => {
 					</h2>
 					<h2 className="start__title slideTop">Quiz</h2>
 				</div>
-				<p className="start__text">Anécdotas desde los orígenes del rock!</p>
+				<p className="start__text">
+					El juego definitivo sobre historia y anécdotas desde los orígenes del
+					rock!
+				</p>
 				<Link to="/game">
 					<button
 						onClick={props.handleReset}

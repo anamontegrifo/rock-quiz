@@ -6,7 +6,7 @@ const Score = (props) => {
 	const hitCounterList = totalCounter.map((number, index) => (
 		<li
 			className={
-				props.hitCounter > index
+				index < props.hitCounter
 					? 'score__list--item greenActive'
 					: 'score__list--item'
 			}
@@ -16,7 +16,7 @@ const Score = (props) => {
 	const faultCounterList = totalCounter.map((number, index) => (
 		<li
 			className={
-				props.faultCounter > index
+				index < props.faultCounter
 					? 'score__list--item redActive'
 					: 'score__list--item'
 			}
@@ -26,8 +26,8 @@ const Score = (props) => {
 
 	return (
 		<section className="score">
-			<ul className="score__list">{hitCounterList}</ul>
-			<ul className="score__list">{faultCounterList}</ul>
+			<ul className="score__list--hit">{hitCounterList}</ul>
+			<ul className="score__list--fault">{faultCounterList}</ul>
 		</section>
 	);
 };
