@@ -21,6 +21,7 @@ function App() {
 	const [visibleStyle, setVisibleStyle] = useState('hidden');
 	const [endGame, setEndGame] = useState('hidden');
 	const [cursor, setCursor] = useState(null);
+	const [totalPoints, setTotalPoints] = useState(10);
 
 	useEffect(() => {
 		data.sort(() => {
@@ -72,7 +73,7 @@ function App() {
 
 	const handleNextQuestion = () => {
 		setVisibleStyle('hidden');
-		if (hitCounter === 5 || faultCounter === 5) {
+		if (hitCounter === totalPoints || faultCounter === totalPoints) {
 			setEndGame('endGame');
 		} else {
 			setOrder(order + 1);
@@ -84,6 +85,7 @@ function App() {
 		<div className="app">
 			<Routes>
 				<Route
+					exact
 					path="/game"
 					element={
 						<>
@@ -100,12 +102,20 @@ function App() {
 								hitCounter={hitCounter}
 								faultCounter={faultCounter}
 							/>
-							<Score hitCounter={hitCounter} faultCounter={faultCounter} />
+							<Score
+								hitCounter={hitCounter}
+								faultCounter={faultCounter}
+								totalPoints={totalPoints}
+							/>
 						</>
 					}
 				/>
 
-				<Route path="/" element={<Start handleReset={handleReset} />}></Route>
+				<Route
+					exact
+					path="/"
+					element={<Start handleReset={handleReset} />}
+				></Route>
 			</Routes>
 		</div>
 	);

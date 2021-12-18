@@ -9,7 +9,7 @@ const Quiz = (props) => {
 			<h2 className="quiz__category">{props.question.category}</h2>
 			<Link to="/">
 				<button className="quiz__button">
-					<i class="fas fa-times-circle"></i>
+					<i className="fas fa-times-circle"></i>
 				</button>
 			</Link>
 
