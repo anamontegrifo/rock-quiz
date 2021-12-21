@@ -21,7 +21,7 @@ function App() {
 	const [visibleStyle, setVisibleStyle] = useState('hidden');
 	const [endGame, setEndGame] = useState('hidden');
 	const [cursor, setCursor] = useState(null);
-	const [totalPoints, setTotalPoints] = useState(5);
+	const [totalPoints, setTotalPoints] = useState(10);
 	const [exitButton, setExitButton] = useState('quiz__button');
 
 	useEffect(() => {

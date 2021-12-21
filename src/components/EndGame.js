@@ -10,7 +10,7 @@ const EndGame = (props) => {
 		if (props.faultCounter < props.totalPoints / 4) {
 			secondMessage =
 				'Eres un verdadero experto, se nota que sabes de lo que hablas.';
-		} else if (props.faultCounter < props.totalPoints / 2) {
+		} else if (props.faultCounter < props.totalPoints / 1.5) {
 			secondMessage = 'Sabes bastante!';
 		} else {
 			secondMessage = 'Por los pelos!';
@@ -18,11 +18,12 @@ const EndGame = (props) => {
 	} else if (props.faultCounter === props.totalPoints) {
 		message = 'Has perdido';
 		if (props.hitCounter < props.totalPoints / 4) {
-			secondMessage = 'No tienes ni idea';
-		} else if (props.hitCounter < props.totalPoints / 2) {
-			secondMessage = 'Sabes bastante!';
+			secondMessage =
+				'¡Qué paliza! Espero que al menos te hayan resultado curiosas estas historias';
+		} else if (props.hitCounter < props.totalPoints / 1.5) {
+			secondMessage = 'Sí, algunas eran bastante difíciles, lo reconozco!';
 		} else {
-			secondMessage = 'Por los pelos!';
+			secondMessage = '¡Has estado cerca! Estas preguntas tienen nivel! ';
 		}
 	}
 
@@ -30,10 +31,7 @@ const EndGame = (props) => {
 		<div className={props.endGame}>
 			<div className="quiz__explanation--info">
 				<h2>{message}</h2>
-				<p>
-					{secondMessage} Has tenido {props.hitCounter} aciertos y{' '}
-					{props.faultCounter} fallos
-				</p>
+				<p>{secondMessage}</p>
 				<Spotify />
 			</div>
 		</div>

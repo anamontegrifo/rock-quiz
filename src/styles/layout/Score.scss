@@ -4,6 +4,7 @@
 .score {
 	height: 25%;
 	width: 100%;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -11,12 +12,12 @@
 	background-color: black;
 	&__list {
 		&--hit {
-			height: 70px;
+			height: 40%;
 			display: flex;
 			clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
 		}
 		&--fault {
-			height: 70px;
+			height: 40%;
 			display: flex;
 			clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
 		}
