@@ -21,7 +21,8 @@ function App() {
 	const [visibleStyle, setVisibleStyle] = useState('hidden');
 	const [endGame, setEndGame] = useState('hidden');
 	const [cursor, setCursor] = useState(null);
-	const [totalPoints, setTotalPoints] = useState(10);
+	const [totalPoints, setTotalPoints] = useState(5);
+	const [exitButton, setExitButton] = useState('quiz__button');
 
 	useEffect(() => {
 		data.sort(() => {
@@ -68,11 +69,13 @@ function App() {
 		timeDelay(5000, () => {
 			setCursor(null);
 			setVisibleStyle('quiz__explanation');
+			setExitButton('hidden');
 		});
 	};
 
 	const handleNextQuestion = () => {
 		setVisibleStyle('hidden');
+		setExitButton('quiz__button');
 		if (hitCounter === totalPoints || faultCounter === totalPoints) {
 			setEndGame('endGame');
 		} else {
@@ -101,6 +104,8 @@ function App() {
 								cursor={cursor}
 								hitCounter={hitCounter}
 								faultCounter={faultCounter}
+								exitButton={exitButton}
+								totalPoints={totalPoints}
 							/>
 							<Score
 								hitCounter={hitCounter}

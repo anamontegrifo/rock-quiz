@@ -8,7 +8,7 @@ const Quiz = (props) => {
 		<section className="quiz">
 			<h2 className="quiz__category">{props.question.category}</h2>
 			<Link to="/">
-				<button className="quiz__button">
+				<button className={props.exitButton}>
 					<i className="fas fa-times-circle"></i>
 				</button>
 			</Link>
@@ -38,6 +38,7 @@ const Quiz = (props) => {
 				endGame={props.endGame}
 				hitCounter={props.hitCounter}
 				faultCounter={props.faultCounter}
+				totalPoints={props.totalPoints}
 			/>
 		</section>
 	);
