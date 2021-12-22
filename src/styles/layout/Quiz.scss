@@ -11,7 +11,7 @@
 	justify-content: space-between;
 	background: url('../../media/background.jpg') center;
 	background-size: cover;
-	font-size: 24px;
+	font-size: 18px;
 	&__button {
 		position: absolute;
 		right: 15px;
@@ -23,9 +23,10 @@
 		background: none;
 	}
 	&__category {
-		color:black;
+		color:$dark;
 		background-color: rgba(255, 255, 255, 0.6);
-		font-size: 30px;
+		font-size: 24px;
+		padding: 3px;
 		align-self: start;
 	}
 	&__question {
@@ -62,7 +63,7 @@
 	}
 	&__explanation {
 		position: absolute;
-		font-size: 20px;
+		font-size: 18px;
 		top:0;
 		width: 100%;
 		height: 75%;
@@ -78,7 +79,7 @@
 			align-items: center;
 			justify-content: flex-start;
 			gap: 10px;
-			padding: 10px;
+			padding: 15px;
 		}
 	}
 }
