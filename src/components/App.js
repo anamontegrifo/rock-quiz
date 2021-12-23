@@ -14,7 +14,7 @@ function App() {
 	const [question, setQuestion] = useState(data[0]);
 	const [correctAnswerSound] = useSound(correct);
 	const [wrongAnswerSound] = useSound(wrong);
-	const [hitCounter, setHitCounter] = useState(0);
+	const [hitCounter, setHitCounter] = useState(9);
 	const [faultCounter, setFaultCounter] = useState(0);
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
 	const [selectedStyle, setSelectedStyle] = useState(null);
@@ -25,20 +25,21 @@ function App() {
 	const [exitButton, setExitButton] = useState('quiz__button');
 
 	useEffect(() => {
-		data.sort(() => {
-			return Math.random() - 0.5;
-		});
-		setQuestion(data[0]);
+		startRandomArray();
 	}, []);
 
 	const handleReset = () => {
 		setHitCounter(0);
 		setFaultCounter(0);
+		startRandomArray();
+	};
+	const startRandomArray = () => {
 		data.sort(() => {
 			return Math.random() - 0.5;
 		});
 		setQuestion(data[0]);
 	};
+
 	const timeDelay = (duration, callback) => {
 		setTimeout(() => {
 			callback();

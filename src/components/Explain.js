@@ -15,7 +15,12 @@ const Explain = (props) => {
 					allowFullScreen=""
 					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 				></iframe>
-				<button onClick={props.handleNextQuestion}>Otra!</button>
+				<button
+					className="quiz__explanation--button"
+					onClick={props.handleNextQuestion}
+				>
+					<i class="fas fa-forward"></i>
+				</button>
 			</div>
 		</div>
 	);

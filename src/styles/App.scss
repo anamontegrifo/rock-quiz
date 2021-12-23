@@ -9,24 +9,6 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background-color: whitesmoke;
 	color: $white;
 }
 
-@keyframes correct {
-	0%, 60% {
-		background-color: black;
-	}
-	60%, 100% {
-		background-color: green;
-	}
-}
-
-@keyframes wrong {
-	0%, 60% {
-		background-color: black;
-	}
-	60%, 100% {
-		background-color: tomato;
-	}
-}

@@ -1,17 +1,13 @@
 import '../styles/layout/Quiz.scss';
 import EndGame from './EndGame';
 import Explain from './Explain';
-import { Link } from 'react-router-dom';
+import ExitButton from './ExitButton';
 
 const Quiz = (props) => {
 	return (
 		<section className="quiz">
 			<h2 className="quiz__category">{props.question.category}</h2>
-			<Link to="/">
-				<button className={props.exitButton}>
-					<i className="fas fa-times-circle"></i>
-				</button>
-			</Link>
+			<ExitButton exitButtonClass={props.exitButton} />
 
 			<div className="quiz__question">
 				<p>{props.question.question}</p>

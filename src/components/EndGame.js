@@ -1,10 +1,10 @@
 import '../styles/layout/Quiz.scss';
+import ExitButton from './ExitButton';
 import Spotify from './Spotify';
 
 const EndGame = (props) => {
-	console.log(props.totalPoints / 2);
-	let message;
-	let secondMessage;
+	let message = '';
+	let secondMessage = '';
 	if (props.hitCounter === props.totalPoints) {
 		message = 'Has ganado';
 		if (props.faultCounter < props.totalPoints / 4) {
@@ -23,7 +23,7 @@ const EndGame = (props) => {
 		} else if (props.hitCounter < props.totalPoints / 1.5) {
 			secondMessage = 'Sí, algunas eran bastante difíciles, lo reconozco!';
 		} else {
-			secondMessage = '¡Has estado cerca! Estas preguntas tienen nivel! ';
+			secondMessage = '¡Has estado cerca. Estas preguntas tienen nivel! ';
 		}
 	}
 
