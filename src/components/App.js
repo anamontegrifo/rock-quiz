@@ -14,8 +14,8 @@ function App() {
 	const [question, setQuestion] = useState(data[0]);
 	const [correctAnswerSound] = useSound(correct);
 	const [wrongAnswerSound] = useSound(wrong);
-	const [hitCounter, setHitCounter] = useState(9);
-	const [faultCounter, setFaultCounter] = useState(0);
+	const [hitCounter, setHitCounter] = useState(6);
+	const [faultCounter, setFaultCounter] = useState(6);
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
 	const [selectedStyle, setSelectedStyle] = useState(null);
 	const [visibleStyle, setVisibleStyle] = useState('hidden');
@@ -31,6 +31,7 @@ function App() {
 	const handleReset = () => {
 		setHitCounter(0);
 		setFaultCounter(0);
+		setVisibleStyle('hidden');
 		startRandomArray();
 	};
 	const startRandomArray = () => {

@@ -53,6 +53,9 @@
 		font-size: 30px;
 		background-color: transparent;
 		cursor: pointer;
+		&:hover {
+			color: $red;
+		}
 	}
 	&__container {
 		border-radius: 50%;
