@@ -348,5 +348,80 @@
 				"correct": true
 			}
 		]
+	},
+	{
+		"id": 14,
+		"category": "Haciendo amigos",
+		"question": "¿Qué película muestra los disturbios entre mods y rockers en Brighton en 1964?",
+		"explanation": "Las disputas entre mods y rockers son el hilo argumental de 'Quadrophenia', película de 1979 basada en la ópera-rock homónima del grupo The Who. Jimmy es el protagonista, un joven mod que reparte el correo en una agencia de publicidad y busca sentido a su vida recorriendo las calles con su Lambretta, tomando anfetaminas y odiando a los rockers.",
+		"media": "https://open.spotify.com/embed/track/0bNdtECaLZcHA4B9QPjeUk?utm_source=generator",
+		"answers": [
+			{
+				"text": "Quadrophenia",
+				"correct": true
+			},
+			{
+				"text": "Tommy",
+				"correct": false
+			},
+			{
+				"text": "Shine a light",
+				"correct": false
+			},
+			{
+				"text": "Almost famous",
+				"correct": false
+			}
+		]
+	},
+	{
+		"id": 15,
+		"category": "Greatest hits",
+		"question": "¿Cuál de estos grupos no formó parte de la invasión británica en EEUU en la década de los 60?",
+		"explanation": "The Animals, The Beatles y The Troggs eran grupos británicos que invadieron literalmente la escena musical estadounidense en los sesenta. The Byrds es un grupo estadounidense que surgió influenciado por esas bandas y por la música folk tradicional. Aquí puedes escuchar su principal éxito 'Turn! Turn! Turn!'.",
+		"media": "https://open.spotify.com/embed/track/5qBqBdfTEIWJwAS0Jm2F5R?utm_source=generator",
+		"answers": [
+			{
+				"text": "The Animals",
+				"correct": false
+			},
+			{
+				"text": "The Beatles",
+				"correct": false
+			},
+			{
+				"text": "The Troggs",
+				"correct": false
+			},
+			{
+				"text": "The Byrds",
+				"correct": true
+			}
+		]
+	},
+	{
+		"id": 16,
+		"category": "Haciendo amigos",
+		"question": "¿Cuál de estos grupos no formó parte de la invasión británica en EEUU en la década de los 60?",
+		"explanation": "The Animals, The Beatles y The Troggs eran grupos británicos que invadieron literalmente la escena musical estadounidense en los sesenta. The Byrds es un grupo estadounidense que surgió influenciado por esas bandas y por la música folk tradicional. Aquí puedes escuchar su principal éxito 'Turn! Turn! Turn!'.",
+		"media": "https://open.spotify.com/embed/track/5qBqBdfTEIWJwAS0Jm2F5R?utm_source=generator",
+		"answers": [
+			{
+				"text": "The Animals",
+				"correct": false
+			},
+			{
+				"text": "The Beatles",
+				"correct": false
+			},
+			{
+				"text": "The Troggs",
+				"correct": false
+			},
+			{
+				"text": "The Byrds",
+				"correct": true
+			}
+		]
 	}
 ]
